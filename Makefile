@@ -1,5 +1,5 @@
 install: install-bash install-virtualenvwrapper install-pythonrc \
-		 install-subl install-bin install-vcprompt install-git
+		 install-bin install-vcprompt install-git
 
 install-vcprompt:
 	@rm -rf /tmp/vcprompt
@@ -28,9 +28,3 @@ install-virtualenvwrapper:
 
 install-pythonrc:
 	ln -fs `pwd`/python/pythonrc.py ~/.pythonrc.py
-
-install-subl:
-ifeq ($(shell uname),Darwin)
-	ln -fs `pwd`/sublimetext3/Packages/User/* ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/
-	sudo ln -fs "/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl" /usr/local/bin/subl
-endif
