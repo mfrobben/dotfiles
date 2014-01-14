@@ -1,9 +1,9 @@
 [github]
-  user = dcramer
+  user = mfrobben
 
 [user]
-  name = David Cramer
-  email = dcramer@gmail.com
+  name = Matthew Robben
+  email = mattr@dropbox.com
 
 [color]
   ui = auto
